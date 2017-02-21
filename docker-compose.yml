@@ -1,4 +1,41 @@
-wildflyswarm:
-  build: .
-  ports:
-    - "8080:8080"
+version: '2'
+
+services:
+    wildflyswarm:
+      build: .
+      ports:
+        - "8080:8080"
+      links:
+        - postgresdb
+      depends_on:
+        - postgresdb
+
+    postgresdb:
+      container_name: postgresdb
+      image: postgres
+      volumes_from:
+        - dbstore
+      ports:
+        - "5432:5432"
+      depends_on:
+        - dbstore
+
+    dbstore:
+        container_name: dbstore
+        image: postgres
+        volumes:
+          - dbdata:/var/lib/postgresql/data
+        entrypoint: /bin/true
+        environment:
+          - POSTGRES_PASSWORD=test1234
+
+    ## ONLY for developers to access to postgresdb by pgAdmin4 UI tool
+    pgadmin4:
+        container_name: pgadmin4
+        image: fenglc/pgadmin4
+        links:
+          - postgresdb
+        ports:
+          - "5050:5050"
+volumes:
+  dbdata:

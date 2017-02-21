@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mvn package && docker-compose up
+mvn clean package && docker-compose up
