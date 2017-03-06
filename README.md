@@ -36,4 +36,4 @@ Finally you can view the application at ```http://localhost:8080```
 
 #### Docker Cheat Sheet Helper Reference
 
-```https://github.com/wsargent/docker-cheat-sheet```
+https://github.com/wsargent/docker-cheat-sheet
