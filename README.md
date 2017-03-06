@@ -1,8 +1,8 @@
 
-# XXXXXXX Microservice Template.
+# Microservice Template.
 
 ## 1 Overview
-This project contains the XXXXXXX Microservice Template. It uses docker in development, build and production.
+This project contains the Microservice Template. It uses docker in development, build and production.
 
 ## 2 Developing locally 
 Local development is done via a development docker image. As a minimum requirement, you need docker installed and a local clone of this repository.
