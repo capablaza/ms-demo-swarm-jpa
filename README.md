@@ -34,13 +34,15 @@ Once your image is built, you need to run it. Run the following command from you
 Finally you can view the application at ```http://localhost:8080```  
 
 
-#### Docker Cheat Sheet Helper Reference
+## General Document Helper Reference
+
+#### Docker Cheat Sheet 
 
 https://github.com/wsargent/docker-cheat-sheet
 
-#### Wildfly Swarm Helper Reference
+#### Wildfly Swarm
 
 http://wildfly-swarm.io/documentation/
 
-#### JPA Helper Reference
+#### JPA
 http://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html
