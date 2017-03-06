@@ -37,3 +37,10 @@ Finally you can view the application at ```http://localhost:8080```
 #### Docker Cheat Sheet Helper Reference
 
 https://github.com/wsargent/docker-cheat-sheet
+
+#### Wildfly Swarm Helper Reference
+
+http://wildfly-swarm.io/documentation/
+
+#### JPA Helper Reference
+http://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html
