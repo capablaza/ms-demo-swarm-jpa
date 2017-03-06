@@ -2,7 +2,9 @@ version: '2'
 
 services:
     wildflyswarm:
-      build: .
+      build: 
+        context: .
+        dockerfile: dev/Dockerfile.dev
       ports:
         - "8080:8080"
       external_links:
