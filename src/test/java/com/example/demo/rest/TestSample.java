@@ -11,9 +11,4 @@ public class TestSample {
         assertEquals("is testing running","is testing running");
     }
 
-    @Test
-    public void testSampleFalse(){
-        assertEquals("is testing wrong","is testing running");
-    }
-
 }
