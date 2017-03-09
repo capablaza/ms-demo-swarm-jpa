@@ -31,7 +31,7 @@ Once your image is built, you need to run it. Run the following command from you
 
 ```docker run --name microservice-demo -p 8080:8080 -it --net postgres_default --link postgresdb:postgres ms-demo-swarm```
 
-Finally you can view the application at ```http://localhost:8080```  
+Finally you can view the application at ```http://localhost:8080```  and for review swagger api information you can use ```http://localhost:8080/swagger.json```
 
 
 ## General Document Helper Reference
