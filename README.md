@@ -25,11 +25,11 @@ The most simple way to build & run the MicroService is using Docker Composer, to
 
 First, you need to build your docker image. To do so, run a similar command from your **repository root**:     
 
-```docker build -f dev/Dockerfile.dev -t microservice-demo .```
+```docker build -f dev/Dockerfile.dev -t wildflyswarm --build-arg DEV_UID=$UID --build-arg DEV_HOME=$(pwd) .```
 
 Once your image is built, you need to run it. Run the following command from your **repository root**:  
 
-```docker run --name microservice-demo -p 8080:8080 -it --net postgres_default --link postgresdb:postgres ms-demo-swarm```
+```docker run --name wildflyswarm -p 8080:8080 -u $UID -v $(pwd):$(pwd) -it --net postgresdb_default --link postgresdb:postgres wildflyswarm```
 
 Finally you can view the application at ```http://localhost:8080```  and for review swagger api information you can use ```http://localhost:8080/swagger.json```
 
